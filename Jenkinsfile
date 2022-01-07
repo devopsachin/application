@@ -9,7 +9,7 @@ pipeline{
                 sh "python --version"
             }
         }
-        stage('groovysh --version'){
+        stage('groovysh'){
             agent {
                 docker {image 'groovy:latest'}
             }
