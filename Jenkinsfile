@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage('python --version'){
+        stage('python'){
             agent {
         docker { image 'python:latest' }
               }
