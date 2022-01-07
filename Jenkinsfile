@@ -1,21 +1,11 @@
 pipeline{
     agent any
     stages{
-        stage('python'){
-            agent {
-        docker { image 'python:latest' }
-              }
+        stage('Dev exe'){
             steps{
-                sh "python --version"
-            }
-        }
-        stage('groovysh'){
-            agent {
-                docker {image 'groovy:latest'}
-            }
-                steps{
-                    sh "groovysh --version"
-                }
+                echo "this is dev deployment"
             }
         }
     }
+}
+         
