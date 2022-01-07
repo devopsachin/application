@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage('Dev exe'){
+        stage('Dev exeecute'){
             steps{
                 echo "this is dev deployment"
             }
