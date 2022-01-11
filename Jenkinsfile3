@@ -1,8 +1,8 @@
 pipeline{
   agent any 
   environment {
-  value = readProperties file: 'Master.Properties'
-  person = value['name']
+  value = readProperties file: "Master.Properties"
+  person=value['name']
   }
   
   stages{
