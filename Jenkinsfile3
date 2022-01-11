@@ -1,0 +1,15 @@
+pipeline{
+  agent any 
+  envoirment {
+  def value = readProperties file: 'Master.Properties'
+  person=value[name]
+  }
+  
+  stages{
+  stage('echo name'){
+      steps{
+          echo "${person}"
+          }
+         }
+        }
+       }
