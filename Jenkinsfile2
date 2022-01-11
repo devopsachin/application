@@ -3,6 +3,7 @@ pipeline {
     environment{
         def param = readJSON file: 'some.json'
         msg = "${param.Hello}"
+        deployTo = "${param.env}"
         
     }
     stages{
