@@ -9,7 +9,7 @@ pipeline {
     stages{
         stage('Echo'){
             steps{
-                echo "${msg}"
+                echo "${deployTo}"
             }
         }
     }
