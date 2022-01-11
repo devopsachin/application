@@ -30,5 +30,6 @@ pipeline{
                         sh "docker run -it -d --name tomcatwebapp -p 9090:8080 tomcatapp:latest"
                     }
                 }
-                            
+                     }
+                     }
                   
