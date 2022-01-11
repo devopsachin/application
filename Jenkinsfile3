@@ -2,7 +2,7 @@ pipeline{
   agent any 
   environment {
   def value = readProperties file: 'Master.Properties'
-  person=value[name]
+  person=value['name']
   }
   
   stages{
