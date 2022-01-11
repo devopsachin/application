@@ -1,7 +1,7 @@
 pipeline{
   agent any 
   environment {
-  def value = readProperties file: 'Master.Properties'
+  def value = readProperties file: 'some.properties'
   person = "${value.name}"
   }
   
